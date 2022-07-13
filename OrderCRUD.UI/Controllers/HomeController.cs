@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OrderCRUD.BLL.DTO;
 using OrderCRUD.UI.Models;
 using System.Diagnostics;
 
@@ -28,5 +29,26 @@ namespace OrderCRUD.UI.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public ActionResult MakeOrder (int? id)
+        {
+            
+                return View();   
+            
+            
+        }
+
+        [HttpPost]
+        public ActionResult MakeOrder (OrderViewModel order)
+        {
+            var orderDto = new OrderDTO
+            {
+                Date = order.Date,
+                Id = order.Id,
+                Number = order.Number,
+            };
+            return View (order);
+        }
+
     }
 }

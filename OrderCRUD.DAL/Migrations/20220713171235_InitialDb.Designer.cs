@@ -12,8 +12,8 @@ using OrderCRUD.DAL.EF;
 namespace OrderCRUD.DAL.Migrations
 {
     [DbContext(typeof(EFContext))]
-    [Migration("20220712204247_InitialDB")]
-    partial class InitialDB
+    [Migration("20220713171235_InitialDb")]
+    partial class InitialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

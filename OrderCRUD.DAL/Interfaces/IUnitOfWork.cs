@@ -11,7 +11,7 @@ namespace OrderCRUD.DAL.Interfaces
     {
         IRepository<Order> Orders { get; }
         IRepository<OrderItem> OrderItems { get; }
-        IRepository<Provider> Providers { get; }
+      //  IRepository<Provider> Providers { get; }
         void Save();
     }
 }
